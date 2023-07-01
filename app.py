@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from authentication.authTools import login_pipeline, update_passwords, hash_password
+from authentication.auth_tools import login_pipeline, update_passwords, hash_password
 from database.db import Database
 from flask import Flask, render_template, request
 from core.session import Sessions
@@ -9,7 +9,7 @@ app = Flask(__name__)
 HOST, PORT = 'localhost', 8080
 global username, products, db, sessions
 username = 'default'
-db = Database('database/storeRecords.db')
+db = Database('database/store_records.db')
 products = db.get_full_inventory()
 sessions = Sessions()
 sessions.add_new_session(username, db)
@@ -95,7 +95,7 @@ def register():
 
     modifies:
         - passwords.txt: adds a new username and password combination to the file
-        - database/storeRecords.db: adds a new user to the database
+        - database/store_records.db: adds a new user to the database
     """
     username = request.form['username']
     password = request.form['password']

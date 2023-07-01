@@ -1,4 +1,4 @@
-from authentication.authTools import hash_password
+from authentication.auth_tools import hash_password
 
 
 def test_hash_password_generates_salt():

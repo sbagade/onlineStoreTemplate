@@ -2,39 +2,30 @@
 
 ## Description
 
-This repository contains template code for a simple online store, built for my students in ITSC 3155 - Software Engineering at UNC Charlotte. Since the code is written as a starting template for students' group final projects, this repository should not be seen as a complete, production-ready online store. Functional features like user session management, database access, unit testing, and server-side rendering are included but kept at an abstract level. Users are encouraged to fork this repository and customize it to the needs of their own project.
+This repository contains template code for a simple online store, built for my students in ITSC 3155 - Software Engineering at UNC Charlotte. Since the code is written as a starting template for students' group final projects, this repository should not be seen as a complete, production-ready online store. Functional features like user session management, database access, unit testing, and server-side rendering are included but kept at an abstract level. Users are instructed to fork this repository and customize it to the needs of their own project.
 
 ## How to Use
 
-To run this project, you simply need to have Python 3.10 installed on your machine. You can download Python 3.10 from the [official website](<https://www.python.org/downloads/release/python-3108>).
+To run this project, you simply need to have Python 3.10 installed on your machine. You can download Python 3.10 from the [official website](<https://www.python.org/downloads/release/python-3108>). To complete each project milestone, OS-specific dependencies (such as `Graphviz` for generating UML diagrams) may need to be installed. These dependencies are listed in the project instructions.
 
-### Setup Script (Recommended)
+### Setup and Installation
 
-A script titled `setup.sh` is included at the root of this repository, which will automatically install the required dependencies and set up the database. To run this script, execute the following command:
-
-```bash
-bash setup.sh
-```
-
-If you instead prefer to manually install the python module dependencies, run the following command:
+All module dependencies are listed in the `requirements.txt` file. To install these dependencies, run the following command from the root of the repository:
 
 ```bash
-pip install -r requirements.txt # or pip3 install -r requirements.txt if pip is not set to use Python 3
+pip3 install -r requirements.txt
+# Note: depending on your system, you may need to use `pip` or `python3.10 -m pip1 instead of `pip3`
 ```
 
 ### Running the Server
 
-Another script titled `run.sh` is also included at the root of this repository, which will automatically run the application. Execution of this script is recommended but not required. If you would like to manually run the server, run the following command:
-
-```bash
-./run.sh # or bash run.sh if permissions are not set
-```
+Once all installation steps are complete, the `app.py` script can be run to start the server. Follow the local server URL that is printed to the console to view the website.
 
 ## Documentation Style
 
 Across all files, classes and functions are documented using docstrings, which are formatted according to the [Google Python Style Guide](<https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings>).
 
-Additionally, `authentication`, `core`, `database`, `static` `templates`, and `tests` each contain their own `README.md` file, where the contents of each directory are described in more detail.
+Additionally, detailed documents for the project code folders (`authentication`, `core`, `database`, `static` `templates`, and `tests`) have been provided in the `docs/directories` folder. These documents describe the purpose of each file in the folder and how they interact with each other.
 
 ## Testing
 
