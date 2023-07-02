@@ -17,6 +17,15 @@ pip3 install -r requirements.txt
 # Note: depending on your system, you may need to use `pip` or `python3.10 -m pip1 instead of `pip3`
 ```
 
+### Database Setup
+
+The project uses a SQLite database, which is stored in the `database` directory. To create or reset the database, navigate to the `database` directory and run the following command:
+
+```bash
+python3 reset_database.py
+# Note: depending on your system, you may need to use `python3.10` or `py` instead of `python3`
+```
+
 ### Running the Server
 
 Once all installation steps are complete, the `app.py` script can be run to start the server. Follow the local server URL that is printed to the console to view the website.
